@@ -20,9 +20,9 @@ services:
       WHITELIST: player,name
       OPS: player,name
     ports:
-      - 25565:25565
+      - 25561:25561
     volumes:
-      - PATH-TO-LOCAL-DIRECTORY:/data
+      - /etc/dokploy/compose/server-minecraft-aedbc5/data
     ulimits:
       nofile:
         soft: "65536"
